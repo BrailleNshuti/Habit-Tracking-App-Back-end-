@@ -76,6 +76,7 @@ The application is divided into logically separated modules to improve readabili
 ## Project Structure
 
 ```text
+
 Habit-Tracking-App-Back-end/
 ├── data/
 │   └── habits.json
@@ -103,23 +104,22 @@ Habit-Tracking-App-Back-end/
 ├── requirements.txt
 └── pytest.ini
 
-
-
+``` 
 
 ## Analytics Module
 
-The analytics module was implemented using **pure functional programming** concepts and contains the following functions:
+The analytics module was implemented using **functional programming** concepts (pure functions with no side effects) and contains the following functions:
 
-| Function                     | Description                                              |
-|------------------------------|----------------------------------------------------------|
-| `list_habits()`              | Returns all tracked habits                               |
-| `filter_by_periodicity()`    | Filters habits by periodicity (daily/weekly)             |
-| `longest_streak_all()`       | Returns the longest streak overall                       |
-| `longest_streak_per_habit()` | Returns the longest streak for a specific habit          |
-
----
+| Function                    | Description                                      |
+|-----------------------------|--------------------------------------------------|
+| `list_habits()`             | Returns all tracked habits                       |
+| `filter_by_periodicity()`   | Filters habits by periodicity (daily/weekly)     |
+| `longest_streak_all()`      | Returns the longest streak overall               |
+| `longest_streak_per_habit()`| Returns the longest streak for a specific habit  |
 
 The analytics functions are completely separated from the user interface and storage logic to improve modularity and testability.
+
+---
 
 ## Streak Calculation Logic
 
