@@ -5,9 +5,13 @@ This Application (back-end) provides functionalities for users to define habits,
 
 
 **Author**
+
 **Name**: Rusingiza Nshuti Braille
+
 **Matriculation Number**: 4243333
+
 **University**: IU International University of Applied Sciences
+
 **Course**: DLBDSOOFPP01 – Object-Oriented and Functional Programming with Python
 
 ## Project Description
@@ -69,11 +73,12 @@ The HabitTracker class uses storage and analytics modules together.
 ### Modular Design
 The application is divided into logically separated modules to improve readability and maintainability.
 
-object-oriented-programming-with-python
-│
+## Project Structure
+
+```text
+Habit-Tracking-App-Back-end/
 ├── data/
 │   └── habits.json
-│
 ├── habit_tracker/
 │   ├── __init__.py
 │   ├── analytics.py
@@ -83,18 +88,15 @@ object-oriented-programming-with-python
 │   ├── habit.py
 │   ├── storage.py
 │   └── tracker.py
-│
 ├── tests/
 │   ├── test_analytics.py
 │   ├── test_habit.py
 │   └── test_tracker.py
-│
 ├── screenshots/
 │   ├── cli_menu.png
 │   ├── analytics_results.png
 │   ├── unit_tests.png
 │   └── streak_examples.png
-│
 ├── .gitignore
 ├── main.py
 ├── README.md
