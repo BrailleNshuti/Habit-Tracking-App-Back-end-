@@ -103,160 +103,122 @@ Habit-Tracking-App-Back-end/
 ├── requirements.txt
 └── pytest.ini
 
+
 ## Analytics Module
-The analytics module was implemented using functional programming concepts and contains functions for:
 
-**list_habits()**:	Returns all tracked habits
-**filter_by_periodicity()**:	Filters habits by periodicity (daily/weekly)
-**longest_streak_all()**:	Returns the longest streak overall
-**longest_streak_per_habit()**:	Returns the longest streak for one habit
+The analytics module was implemented using **functional programming** concepts (pure functions with no side effects) and contains the following functions:
 
-The analytics functions are separated from the user interface and storage logic to improve modularity.
+| Function                    | Description                                      |
+|-----------------------------|--------------------------------------------------|
+| `list_habits()`             | Returns all tracked habits                       |
+| `filter_by_periodicity()`   | Filters habits by periodicity (daily/weekly)     |
+| `longest_streak_all()`      | Returns the longest streak overall               |
+| `longest_streak_per_habit()`| Returns the longest streak for a specific habit  |
+
+The analytics functions are completely separated from the user interface and storage logic to improve modularity and testability.
+
+
 
 ## Streak Calculation Logic
+
 One of the most important parts of the project is streak calculation.
-### Daily Habits
-Daily streaks are calculated using consecutive calendar days.
-### Weekly Habits
-Weekly streaks are calculated using consecutive ISO calendar weeks.
+
+- **Daily Habits**: Calculated using consecutive calendar days  
+- **Weekly Habits**: Calculated using consecutive ISO calendar weeks  
 
 This ensures that weekly habits are not incorrectly evaluated as daily habits.
 
-## Predefined Habit Data
-The project includes predefined fixture data containing more than four weeks of habit completion history.
-### The predefined data is used for:
--	Testing streak calculations
--	Testing analytics functions
--	Demonstrating application functionality
--	Automated unit testing
 
-### The fixture data includes:
--	Daily habits
--	Weekly habits
--	Continuous streak examples
--	Broken streak examples
+
+## Predefined Habit Data
+
+The project includes **4+ weeks** of predefined fixture data in `fixtures.py` and `data/habits.json`.  
+This data is used for testing streak calculations, analytics functions, and demonstrating the application.
+
+
 
 ## Installation
-1. Clone the Repository
-git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME.git
-cd YOUR-REPOSITORY-NAME
 
-2. Create a Virtual Environment
-Windows
-python -m venv .venv
-.venv\Scripts\activate
-Mac/Linux
-python3 -m venv .venv
-source .venv/bin/activate
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/BrailleNshuti/Habit-Tracking-App-Back-end.git
+   cd Habit-Tracking-App-Back-end
+   ```
 
-3. Install Dependencies
-pip install -r requirements.txt
+2. **Create a virtual environment**
+   ```bash
+   python -m venv .venv
+   # Windows
+   .venv\Scripts\activate
+   # macOS / Linux
+   source .venv/bin/activate
+   ```
+
+3. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+
 
 ## How to Run the Application
-Run the application using:
+
+```bash
 python main.py
+```
 
-The command-line interface will open and allow users to:
--	Create habits
--	Complete habits
--	Delete habits
--	View analytics
--	Track streaks
 
-How to Run Unit Tests
-Run all tests using:
+
+## How to Run Unit Tests
+
+```bash
 pytest
-Example successful result:
-9 Tests passed
+```
 
-Screenshots
+Expected result: **9 Tests passed**
+
+
 
 ## Screenshots
 
 **Main CLI Menu**  
-<image-card alt="Main CLI Menu" src="screenshots/cli_menu.png" ></image-card>
+![Main CLI Menu](screenshots/cli_menu.png)
 
 **Analytics Results**  
-<image-card alt="Analytics Results" src="screenshots/analytics_results.png" ></image-card>
+![Analytics Results](screenshots/analytics_results.png)
 
 **Unit Tests Passing**  
-<image-card alt="Unit Tests Passing" src="screenshots/unit_tests.png" ></image-card>
-
-9 Tests passed
+![Unit Tests Passing](screenshots/unit_tests.png)
 
 **Streak Calculation Example**  
-<image-card alt="Streak Calculation Example" src="screenshots/streak_examples.png" ></image-card>
+![Streak Calculation Example](screenshots/streak_examples.png)
 
 
 
-## Code Quality and Documentation
-The project follows Python naming conventions and software engineering best practices.
-Naming Conventions
--	Classes use PascalCase
--	Variables and functions use snake_case
--	File names are lowercase
+## Code Quality & Documentation
 
-## Documentation
-The source code includes:
--	Docstrings
--	Inline comments
--	Modular file organisation
+- Follows Python naming conventions (PascalCase for classes, snake_case for functions/variables)
+- Includes docstrings and inline comments
+- Uses `.gitignore` to keep the repository clean
+- Formatted with Black and linted with Ruff
 
-## .gitignore
-The repository includes a .gitignore file to avoid uploading unnecessary local files.
-Example:
-__pycache__/
-.pytest_cache/
-.venv/
-*.pyc
-.DS_Store
-This keeps the GitHub repository clean and professional.
 
-## Unit Testing Coverage
-The project contains automated tests covering:
-Test Area     covered
-Habit creation	Yes
-Habit deletion	Yes
-Daily streak calculations	yes
-Weekly streak calculations	Yes
-Analytics filtering	Yes
-Longest streak calculations	Yes
-Persistence and storage	Yes
 
-## Challenges and Improvements
-One of the hardest things during development was figuring out how to correctly calculate streaks not only for daily habits but also for weekly habits.
-Based on the Phase 2 tutor feedback, a major upgrade was done by breaking the project into modular files and introducing better automated testing.
+## Challenges & Improvements
 
-The final Phase 3 version significantly improved:
--	Project modularity
--	Testing quality
--	Documentation
--	GitHub organisation
--	Analytics reliability
--	Repository cleanliness
+The biggest challenge was implementing correct streak calculations for both daily and weekly habits. After Phase 2 feedback, the project was significantly improved in modularity, testing quality, and documentation.
 
-## Future Improvements
-Possible future improvements include:
--	Graphical user interface (GUI)
--	SQLite database support
--	Habit reminder notifications
--	User authentication
--	Statistics visualisation
--	Exporting analytics reports
+
 
 ## Conclusion
-The Habit Tracking Application perfectly meets the portfolio requirements for the Object-Oriented and Functional Programming with Python course.
-The final application demonstrates:
--	Object-oriented programming
--	Functional analytics
--	Modular software design
--	Persistent storage
--	Automated testing
--	Command-line interaction
--	Professional GitHub project organisation
 
-The project changed quite a bit since previous phases and at this point is a clean, maintainable, and well-tested backend Python application.
+The Habit Tracking Application successfully fulfils all portfolio requirements for the course **DLBDSOOFPP01 – Object-Oriented and Functional Programming with Python**.
 
-## GitHub Repository
+It demonstrates strong understanding of:
+- Object-Oriented Programming
+- Functional Programming
+- Modular software design
+- Persistent JSON storage
+- Automated unit testing
 
-https://github.com/BrailleNshuti/Habit-Tracking-App-Back-end-
+**GitHub Repository:** [https://github.com/BrailleNshuti/Habit-Tracking-App-Back-end](https://github.com/BrailleNshuti/Habit-Tracking-App-Back-end)
