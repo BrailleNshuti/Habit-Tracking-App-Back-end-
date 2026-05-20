@@ -69,26 +69,25 @@ The HabitTracker class uses storage and analytics modules together.
 ### Modular Design
 The application is divided into logically separated modules to improve readability and maintainability.
 
-## Project Structure
-habit-tracker/
-│
-├── habit_tracker/
-│   ├── __init__.py
-│   ├── habit.py
-│   ├── tracker.py
-│   ├── analytics.py
-│   ├── storage.py
-│   ├── cli.py
-│   ├── fixtures.py
-│   └── exceptions.py
-│
-├── tests/
-│   ├── test_habit.py
-│   ├── test_tracker.py
-│   └── test_analytics.py
+object-oriented-programming-with-python
 │
 ├── data/
 │   └── habits.json
+│
+├── habit_tracker/
+│   ├── __init__.py
+│   ├── analytics.py
+│   ├── cli.py
+│   ├── exceptions.py
+│   ├── fixtures.py
+│   ├── habit.py
+│   ├── storage.py
+│   └── tracker.py
+│
+├── tests/
+│   ├── test_analytics.py
+│   ├── test_habit.py
+│   └── test_tracker.py
 │
 ├── screenshots/
 │   ├── cli_menu.png
@@ -96,11 +95,11 @@ habit-tracker/
 │   ├── unit_tests.png
 │   └── streak_examples.png
 │
+├── .gitignore
+├── main.py
 ├── README.md
 ├── requirements.txt
-├── pytest.ini
-├── .gitignore
-└── main.py
+└── pytest.ini
 
 ## Analytics Module
 The analytics module was implemented using functional programming concepts and contains functions for:
@@ -258,4 +257,4 @@ The project changed quite a bit since previous phases and at this point is a cle
 
 ## GitHub Repository
 
-https://github.com/YOUR-USERNAME/YOUR-REPOSITORY-NAME
+https://github.com/BrailleNshuti/Habit-Tracking-App-Back-end-
