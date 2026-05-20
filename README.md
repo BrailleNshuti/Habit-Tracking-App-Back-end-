@@ -103,6 +103,7 @@ Habit-Tracking-App-Back-end/
 ├── requirements.txt
 └── pytest.ini
 
+---
 
 ## Analytics Module
 
@@ -117,7 +118,7 @@ The analytics module was implemented using **functional programming** concepts (
 
 The analytics functions are completely separated from the user interface and storage logic to improve modularity and testability.
 
-
+---
 
 ## Streak Calculation Logic
 
@@ -128,14 +129,14 @@ One of the most important parts of the project is streak calculation.
 
 This ensures that weekly habits are not incorrectly evaluated as daily habits.
 
-
+---
 
 ## Predefined Habit Data
 
 The project includes **4+ weeks** of predefined fixture data in `fixtures.py` and `data/habits.json`.  
 This data is used for testing streak calculations, analytics functions, and demonstrating the application.
 
-
+---
 
 ## Installation
 
@@ -143,7 +144,6 @@ This data is used for testing streak calculations, analytics functions, and demo
    ```bash
    git clone https://github.com/BrailleNshuti/Habit-Tracking-App-Back-end.git
    cd Habit-Tracking-App-Back-end
-   ```
 
 2. **Create a virtual environment**
    ```bash
