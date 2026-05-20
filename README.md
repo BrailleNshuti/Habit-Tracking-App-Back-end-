@@ -222,4 +222,4 @@ It demonstrates strong understanding of:
 - Persistent JSON storage
 - Automated unit testing
 
-**GitHub Repository:** [https://github.com/BrailleNshuti/Habit-Tracking-App-Back-end](https://github.com/BrailleNshuti/Habit-Tracking-App-Back-end)
+**GitHub Repository:** [https://github.com/BrailleNshuti/Habit-Tracking-App-Back-end-](https://github.com/BrailleNshuti/Habit-Tracking-App-Back-end-)
