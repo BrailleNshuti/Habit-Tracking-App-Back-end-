@@ -143,7 +143,7 @@ This data is used for testing streak calculations, analytics functions, and demo
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/BrailleNshuti/Habit-Tracking-App-Back-end.git
+   git clone https://github.com/BrailleNshuti/Habit-Tracking-App-Back-end-.git
    cd Habit-Tracking-App-Back-end
 
 2. **Create a virtual environment**
